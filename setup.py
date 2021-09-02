@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
     DESCRIPTION = f.read()
 
 # Required dependencies
-install = ["faiss-cpu>=1.7.1.post2", "numpy>=1.18.4", "torch>=1.6.0", "transformers>=4.8.2"]
+install = ["faiss-cpu>=1.7.1.post2", "numpy>=1.18.4", "torch>=1.6.0", "transformers==4.9.2"]
 
 # Optional dependencies
 extras = {}
@@ -27,7 +27,7 @@ extras["similarity"] = [
     "hnswlib>=0.5.0",
     "pymagnitude-lite>=0.1.43",
     "scikit-learn>=0.23.1",
-    "sentence-transformers>=2.0.0",
+    "sentence-transformers=4.9.2",
 ]
 
 extras["workflow"] = ["apache-libcloud>=3.3.1", "pillow>=7.2.0", "requests>=2.24.0"]
